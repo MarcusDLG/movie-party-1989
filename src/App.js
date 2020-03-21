@@ -11,7 +11,7 @@ class App extends Component {
 
   componentDidMount() {
     fetch(
-      'https:api.themoviedb.org/3/discover/movie?primary_release_year=1989&sort_by=popularity.desc&api_key=bacaaf4eaf8460f869017fcbe5649411'
+      'https://api.themoviedb.org/3/discover/movie?primary_release_year=1989&sort_by=popularity.desc&api_key=bacaaf4eaf8460f869017fcbe5649411'
     )
       .then(response => {
         console.log('then-response' + response)

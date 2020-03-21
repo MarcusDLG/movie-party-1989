@@ -32,10 +32,13 @@ body h1 {
 
 .movieCard {
   border: 0.09rem solid rgb(207, 207, 206);
-  padding-top: 2rem;
+  background-color: teal;
+  margin: 1rem;
+  padding: 2rem 2rem;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 80% 20%;
+  border-radius: 4rem;
 }
 
 .movieCard p {

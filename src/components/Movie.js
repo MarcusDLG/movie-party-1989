@@ -10,7 +10,7 @@ export class Movie extends Component {
             <head>{this.props.original_title}</head>
             <img
               alt={this.props.title}
-              src={`https:image.tmdb.org/t/p/w185_and_h278_bestv2${this.props.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${this.props.poster_path}`}
             ></img>
             <h2>{this.props.original_title}</h2>
             <p>{this.props.overview}</p>
