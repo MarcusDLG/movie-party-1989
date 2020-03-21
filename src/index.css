@@ -1,6 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
-  font-family: 'Righteous', cursive;
+  /* font-family: 'Righteous', cursive; */
 }
 
 html {
@@ -27,6 +27,7 @@ main {
 body h1 {
   padding-top: 2rem;
   color: black;
+  font-family: 'Righteous', cursive;
 }
 
 .movieCard {
@@ -38,7 +39,7 @@ body h1 {
 }
 
 .movieCard p {
-  font-family: 'Righteous', cursive;
+  /* font-family: 'Righteous', cursive; */
   font-size: 1rem;
 }
 
@@ -57,11 +58,16 @@ body h1 {
 }
 
 .headTop a {
-  color: black
+  color: black;
+  font-family: 'Righteous', cursive;
 }
 
 .headTop img {
   height: 2rem;
   width: auto;
-  padding-left: 5rem
+  padding-left: 5rem;
+}
+
+footer {
+  padding: 3rem;
 }

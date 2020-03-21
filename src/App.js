@@ -35,7 +35,7 @@ class App extends Component {
             {this.state.movieItems.map(movie => {
               return (
                 <Movie
-                  original_title={movie.original_title}
+                  original_title={movie.title}
                   alt={movie.title}
                   poster_path={movie.poster_path}
                   overview={movie.overview}
@@ -46,6 +46,12 @@ class App extends Component {
               )
             })}
           </main>
+          <footer>
+            <p>
+              This product uses the TMDb API but is not endorsed or certified by
+              TMDb.
+            </p>
+          </footer>
         </body>
       </>
     )
