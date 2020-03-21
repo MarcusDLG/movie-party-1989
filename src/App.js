@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Movie from './components/movie'
-import HelloWorld from './components/HelloWorld'
+import Movie from './components/Movie'
+import Header from './components/Header'
+// import HelloWorld from './components/HelloWorld'
 
 class App extends Component {
   state = {
@@ -9,7 +10,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch()
+    fetch(
+      'https:api.themoviedb.org/3/discover/movie?primary_release_year=1989&sort_by=popularity.desc&api_key=bacaaf4eaf8460f869017fcbe5649411'
+    )
       .then(response => {
         console.log('then-response' + response)
         return response.json()
@@ -25,11 +28,24 @@ class App extends Component {
   render() {
     return (
       <>
-        <Movie
-          original_title={item.original_title}
-          poster_path={item.poster_path}
-          overview={item.overview}
-        />
+        <body>
+          <Header />
+          <h1>The Most Popular Movies of 1989!!!</h1>
+          <main>
+            {this.state.movieItems.map(movie => {
+              return (
+                <Movie
+                  original_title={movie.original_title}
+                  alt={movie.title}
+                  poster_path={movie.poster_path}
+                  overview={movie.overview}
+                  popularity={movie.popularity}
+                  voteCount={movie.vote_count}
+                />
+              )
+            })}
+          </main>
+        </body>
       </>
     )
   }

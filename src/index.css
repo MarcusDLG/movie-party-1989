@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  font-family: 'Righteous', cursive;
 }
 
 html {
@@ -9,4 +10,46 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(255, 254, 209);
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+body h1 {
+  padding-top: 2rem;
+}
+
+.movieCard {
+  border: 0.09rem solid rgb(207, 207, 206);
+  padding: 2rem
+}
+
+.movieCard p {
+  font-family: 'Righteous', cursive;
+}
+
+.headTop {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  border: 0.09rem solid rgb(207, 207, 206);
+  align-items: center;
+}
+
+.headTop ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.headTop img {
+  height: 2rem;
+  width: auto;
+  padding-left: 5rem
 }
