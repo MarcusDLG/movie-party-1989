@@ -41,6 +41,7 @@ class App extends Component {
                   overview={movie.overview}
                   popularity={movie.popularity}
                   voteCount={movie.vote_count}
+                  releaseDate={movie.release_date}
                 />
               )
             })}
